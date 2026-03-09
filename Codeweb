@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CAPYBARA SHOP - Cày thuê Blox Fruit</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#f59e0b;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+}
+
+nav{
+background:#1e293b;
+text-align:center;
+padding:10px;
+}
+
+nav button{
+padding:10px 15px;
+margin:5px;
+border:none;
+background:#334155;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+section{
+padding:40px;
+display:none;
+}
+
+.category{
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+}
+
+button.order{
+background:#22c55e;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+<script>
+
+function showPage(page){
+
+document.getElementById("home").style.display="none";
+document.getElementById("service").style.display="none";
+document.getElementById("contact").style.display="none";
+
+document.getElementById(page).style.display="block";
+
+}
+
+function order(name){
+alert("Bạn đã chọn dịch vụ: " + name + "\nLiên hệ Discord CAPYBARA SHOP để thuê.");
+}
+
+window.onload=function(){
+showPage("home");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+🐹 CAPYBARA SHOP  
+<br>
+Dịch vụ cày thuê Blox Fruit
+</header>
+
+<nav>
+<button onclick="showPage('home')">Trang chủ</button>
+<button onclick="showPage('service')">Dịch vụ</button>
+<button onclick="showPage('contact')">Liên hệ</button>
+</nav>
+
+<section id="home">
+
+<h2>Chào mừng đến với CAPYBARA SHOP</h2>
+
+<p>Shop chuyên cung cấp dịch vụ cày thuê trong game Blox Fruit.</p>
+
+<p>
+✔ Uy tín<br>
+✔ Nhanh chóng<br>
+✔ Giá rẻ
+</p>
+
+</section>
+
+<section id="service">
+
+<h2>Danh mục dịch vụ</h2>
+
+<div class="category">
+<h3>⚔ Danh mục cày Level</h3>
+
+<div class="card">
+<h4>Cày Level</h4>
+<button class="order" onclick="order('Cày Level')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Cày Level Max</h4>
+<button class="order" onclick="order('Cày Level Max')">Thuê</button>
+</div>
+
+</div>
+
+
+<div class="category">
+<h3>🔥 Danh mục Mastery</h3>
+
+<div class="card">
+<h4>Farm Mastery Trái</h4>
+<button class="order" onclick="order('Mastery Trái')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Farm Mastery Kiếm</h4>
+<button class="order" onclick="order('Mastery Kiếm')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Farm Mastery Gun</h4>
+<button class="order" onclick="order('Mastery Gun')">Thuê</button>
+</div>
+
+</div>
+
+
+<div class="category">
+<h3>🗡 Danh mục vũ khí</h3>
+
+<div class="card">
+<h4>Lấy Kiếm</h4>
+<button class="order" onclick="order('Lấy Kiếm')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Lấy CDK</h4>
+<button class="order" onclick="order('Lấy CDK')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Lấy Soul Guitar</h4>
+<button class="order" onclick="order('Lấy Soul Guitar')">Thuê</button>
+</div>
+
+</div>
+
+
+<div class="category">
+<h3>🌊 Danh mục Sea</h3>
+
+<div class="card">
+<h4>Mở Sea 2</h4>
+<button class="order" onclick="order('Mở Sea 2')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Mở Sea 3</h4>
+<button class="order" onclick="order('Mở Sea 3')">Thuê</button>
+</div>
+
+</div>
+
+
+<div class="category">
+<h3>💥 Danh mục Raid</h3>
+
+<div class="card">
+<h4>Raid Fruit</h4>
+<button class="order" onclick="order('Raid Fruit')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Awaken Fruit</h4>
+<button class="order" onclick="order('Awaken Fruit')">Thuê</button>
+</div>
+
+</div>
+
+
+<div class="category">
+<h3>👑 Danh mục V4</h3>
+
+<div class="card">
+<h4>Up V4</h4>
+<button class="order" onclick="order('Up V4')">Thuê</button>
+</div>
+
+<div class="card">
+<h4>Trial V4</h4>
+<button class="order" onclick="order('Trial V4')">Thuê</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Liên hệ</h2>
+
+<p>Discord: CAPYBARA SHOP</p>
+
+<p>Nếu muốn thuê dịch vụ hãy nhắn tin qua Discord.</p>
+
+</section>
+
+<footer>
+© 2026 CAPYBARA SHOP
+</footer>
+
+</body>
+</html>
